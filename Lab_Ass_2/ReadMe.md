@@ -1,43 +1,28 @@
-# Graphics Lab Assignment 1
+# Graphics Lab Assignment 2
 
 **Student Name:** Tajul Islam  
 **Course:** Computer Graphics & Multimedia     
-**Assignment:** Create a cyan colored window with full name as window title. Close window on pressing 'T' key (first letter of the name).
+# OpenGL Cyan Square and Triangle Project
 
----
+This OpenGL project displays a **cyan-colored square** on a **white background**, with a **cyan triangle** placed on top of the square, sharing two of its corner points. The OpenGL window title is set to **Tajul**, and pressing the **'T'** key will close the program.
 
-## Description
+## 🧾 Features
 
-This project creates an OpenGL window with a cyan background. The window title displays my full name: **"Tajul Islam"**.  
-The program continuously renders a triangle with a color changing dynamically over time.  
-If the user presses the keyboard key **'T'** (the first letter of my name), the window closes and the program terminates.
+- White window background
+- Cyan square centered on the screen
+- Cyan triangle on top of the square sharing two corner points
+- Window title: **Tajul**
+- Press **T** (uppercase or lowercase) to close the window
 
----
+## 🔧 Technologies Used
 
-## Features
+- C / C++
+- OpenGL (GLUT / FreeGLUT)
 
-- Window size: 800x600 pixels  
-- Window title: "Tajul Islam"  
-- Background color: Cyan (RGB: 0, 255, 255)  
-- Close window on pressing 'T' key  
-- Dynamic triangle color changing over time  
+## ▶️ How to Run
 
----
+1. Make sure you have OpenGL and GLUT installed.
+2. Compile the code using a compiler like `g++`:
 
-## Requirements
-
-- Windows 11 (or compatible)  
-- MSYS2 with MinGW64 installed  
-- GLFW library  
-- GLAD OpenGL loader  
-- C++ compiler (g++ with C++11 or higher)  
-
----
-
-## How to Build and Run
-
-1. Open MSYS2 MinGW64 terminal  
-2. Navigate to project folder  
-3. Run the command:  
    ```bash
-   make
+   g++ main.cpp -o main -lGL -lGLU -lglut
